@@ -4,10 +4,11 @@ A simple Binary classification of checkboxes using simple CNN network
 Following are the objectivces:
 
 1. Understand CNN, how to calculate dimensions [see ```CheckBoxClassification```](./custom_image_binary_classification.py) - no dropout/batchnorm are used - it not to learn tunning a model. 
-    a. Calulating Conv2d ouputs
-    b. Cacluating MaxPool2d ouputs
-    c. usage of model.train() and model.eval() -> to ensure if batchnorm, drop outs behaved differently for training and evaluation
-2. BCEWithLogLoss function usage, instead of [torch.nn.BCEWithLogitsLoss](https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html), it has sigmoid as well as log function init, and can be quite confusing using it. 
+    - Calulating Conv2d ouputs
+    - Cacluating MaxPool2d ouputs
+    - Usage of model.train() and model.eval() -> to ensure if batchnorm, drop outs behaved differently for training and evaluation
+
+3. BCEWithLogLoss function usage, instead of [torch.nn.BCEWithLogitsLoss](https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html), it has sigmoid as well as log function init, and can be quite confusing using it. 
 
 3. usage of [torchvision.datasets.ImageFolder](https://pytorch.org/vision/stable/datasets.html)
 
